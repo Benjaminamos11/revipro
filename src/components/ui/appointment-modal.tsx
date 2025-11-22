@@ -64,8 +64,8 @@ export function AppointmentModal({ isOpen, onClose }: AppointmentModalProps) {
                     <div className="relative">
                         <div className="w-24 h-24 rounded-full border-4 border-white shadow-xl overflow-hidden bg-gray-100">
                             <Image
-                                src="https://res.cloudinary.com/dphbnwjtx/image/upload/v1763770550/Generated_Image_November_22_2025_-_8_15AM_zsswsk.jpg"
-                                alt="Verena Amos"
+                                src="https://res.cloudinary.com/dphbnwjtx/image/upload/v1763770793/verena-901x1024_apznj9.png"
+                                alt="Verena Kamer van Toornburg"
                                 width={96}
                                 height={96}
                                 className="w-full h-full object-cover"
@@ -78,7 +78,7 @@ export function AppointmentModal({ isOpen, onClose }: AppointmentModalProps) {
                 {/* Form */}
                 <form onSubmit={handleSubmit} className="px-8 pb-8 space-y-4">
                     <div className="text-center mb-6">
-                        <p className="font-semibold text-gray-900">Verena Amos</p>
+                        <p className="font-semibold text-gray-900">Verena Kamer van Toornburg</p>
                         <p className="text-sm text-gray-600">Geschäftsführerin</p>
                     </div>
 
