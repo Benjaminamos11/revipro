@@ -1,0 +1,7 @@
+# robots.txt for Revipro AG
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://revipro.ch/sitemap.xml

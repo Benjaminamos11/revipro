@@ -68,8 +68,8 @@ export function Footer() {
                         <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Rechtliches</h3>
                         <ul className="space-y-3 text-sm">
                             <li><Link href="/impressum" className="hover:text-burnt-terra-cotta transition-colors">Impressum</Link></li>
-                            <li><Link href="/privacy" className="hover:text-burnt-terra-cotta transition-colors">Datenschutz</Link></li>
-                            <li><Link href="/terms" className="hover:text-burnt-terra-cotta transition-colors">AGB</Link></li>
+                            <li><Link href="/datenschutz" className="hover:text-burnt-terra-cotta transition-colors">Datenschutz</Link></li>
+                            <li><Link href="/agb" className="hover:text-burnt-terra-cotta transition-colors">AGB</Link></li>
                         </ul>
                         <div className="mt-8">
                             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10">
