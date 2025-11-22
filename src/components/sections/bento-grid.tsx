@@ -34,7 +34,7 @@ export function BentoGrid() {
                                 <Building2 className="w-6 h-6" />
                             </div>
 
-                            <h3 className="text-2xl font-bold mb-3">Öffentliche Hand</h3>
+                            <h3 className="text-2xl font-bold mb-3">Öffentliche Hand <span className="text-gray-400 font-normal text-lg block mt-1">(Gemeinden)</span></h3>
 
                             <p className="text-gray-600 mb-8 leading-relaxed">
                                 Spezialisierte Revisionsdienstleistungen für Gemeinden und öffentliche Institutionen. Wir sorgen für Compliance, Transparenz und Budgetsicherheit.
@@ -49,7 +49,7 @@ export function BentoGrid() {
                                 ))}
                             </ul>
 
-                            <Link href="#contact" className="inline-flex items-center text-burnt-terra-cotta font-medium hover:underline">
+                            <Link href="/angebot" className="inline-flex items-center text-burnt-terra-cotta font-medium hover:underline">
                                 Mehr erfahren <ArrowUpRight className="w-4 h-4 ml-1" />
                             </Link>
                         </div>
@@ -88,7 +88,7 @@ export function BentoGrid() {
                                 ))}
                             </ul>
 
-                            <Link href="#contact" className="inline-flex items-center text-burnt-terra-cotta font-medium hover:underline">
+                            <Link href="/angebot" className="inline-flex items-center text-burnt-terra-cotta font-medium hover:underline">
                                 Mehr erfahren <ArrowUpRight className="w-4 h-4 ml-1" />
                             </Link>
                         </div>
