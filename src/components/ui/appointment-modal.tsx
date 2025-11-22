@@ -34,7 +34,7 @@ export function AppointmentModal({ isOpen, onClose }: AppointmentModalProps) {
     if (!isOpen) return null
 
     return (
-        <div className="fixed inset-0 z-50 flex items-start justify-center p-4 pt-20 overflow-y-auto">
+        <div className="fixed inset-0 z-50 flex items-start justify-center p-4 pt-8 overflow-y-auto">
             {/* Backdrop */}
             <div
                 className="absolute inset-0 bg-black/60 backdrop-blur-sm"
