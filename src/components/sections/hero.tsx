@@ -14,7 +14,7 @@ export function Hero() {
         <>
             <section className="relative pt-24 pb-16 md:pt-32 md:pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
                 <div className="container mx-auto px-4 md:px-6">
-                    <div className="grid xl:grid-cols-2 gap-8 md:gap-12 xl:gap-16 2xl:gap-20 items-center">
+                    <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 xl:gap-20 items-center">
 
                         {/* Left Content */}
                         <motion.div
