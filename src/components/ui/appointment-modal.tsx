@@ -34,7 +34,7 @@ export function AppointmentModal({ isOpen, onClose }: AppointmentModalProps) {
     if (!isOpen) return null
 
     return (
-        <div className="fixed inset-0 z-50 flex items-start justify-center p-4 pt-8 overflow-y-auto">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
             {/* Backdrop */}
             <div
                 className="absolute inset-0 bg-black/60 backdrop-blur-sm"
@@ -42,7 +42,7 @@ export function AppointmentModal({ isOpen, onClose }: AppointmentModalProps) {
             />
 
             {/* Modal */}
-            <div className="relative bg-white rounded-3xl shadow-2xl max-w-lg w-full overflow-hidden animate-in fade-in zoom-in duration-200 my-8">
+            <div className="relative bg-white rounded-3xl shadow-2xl max-w-lg w-full overflow-hidden animate-in fade-in zoom-in duration-200">
                 {/* Close Button */}
                 <button
                     onClick={onClose}
@@ -52,7 +52,7 @@ export function AppointmentModal({ isOpen, onClose }: AppointmentModalProps) {
                 </button>
 
                 {/* Header with gradient */}
-                <div className="bg-gradient-to-br from-burnt-terra-cotta to-soft-apricot p-6 pb-12 text-white">
+                <div className="bg-gradient-to-br from-burnt-terra-cotta to-soft-apricot p-5 pb-10 text-white">
                     <h2 className="text-2xl font-bold mb-2">Termin vereinbaren</h2>
                     <p className="text-white/90 text-sm">
                         Wir freuen uns auf Ihre Kontaktaufnahme
@@ -60,7 +60,7 @@ export function AppointmentModal({ isOpen, onClose }: AppointmentModalProps) {
                 </div>
 
                 {/* Profile Picture - overlapping header */}
-                <div className="flex justify-center -mt-10 mb-4">
+                <div className="flex justify-center -mt-8 mb-3">
                     <div className="relative">
                         <div className="w-24 h-24 rounded-full border-4 border-white shadow-xl overflow-hidden bg-gray-100">
                             <Image
@@ -76,8 +76,8 @@ export function AppointmentModal({ isOpen, onClose }: AppointmentModalProps) {
                 </div>
 
                 {/* Form */}
-                <form onSubmit={handleSubmit} className="px-6 pb-6 space-y-3">
-                    <div className="text-center mb-4">
+                <form onSubmit={handleSubmit} className="px-6 pb-5 space-y-2.5">
+                    <div className="text-center mb-3">
                         <p className="font-semibold text-gray-900">Verena Kamer van Toornburg</p>
                         <p className="text-sm text-gray-600">Geschäftsführerin</p>
                     </div>
@@ -148,7 +148,7 @@ export function AppointmentModal({ isOpen, onClose }: AppointmentModalProps) {
                     <Button
                         type="submit"
                         size="lg"
-                        className="w-full rounded-full text-base mt-4 bg-gradient-to-r from-burnt-terra-cotta to-soft-apricot hover:shadow-lg transition-all"
+                        className="w-full rounded-full text-base mt-3 bg-gradient-to-r from-burnt-terra-cotta to-soft-apricot hover:shadow-lg transition-all"
                     >
                         Jetzt online Termin vereinbaren
                     </Button>
