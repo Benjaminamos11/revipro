@@ -7,8 +7,18 @@ import { AppointmentModal } from "@/components/ui/appointment-modal"
 import { motion } from "framer-motion"
 import { ArrowRight } from "lucide-react"
 
+const VIDEOS = [
+    "https://res.cloudinary.com/dphbnwjtx/video/upload/v1763787310/1db4009f-2ed4-4e9b-ae92-fb0a27fc0fba_rpfxfs.mp4",
+    "https://res.cloudinary.com/dphbnwjtx/video/upload/v1763772492/890f6199-2808-44d6-ad4c-6261814d6963_w9eoak.mp4"
+]
+
 export function Hero() {
     const [isModalOpen, setIsModalOpen] = useState(false)
+    const [currentVideoIndex, setCurrentVideoIndex] = useState(0)
+
+    const handleVideoEnded = () => {
+        setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % VIDEOS.length)
+    }
 
     return (
         <>
@@ -60,14 +70,15 @@ export function Hero() {
                         <div className="relative">
                             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                                 <video
+                                    key={VIDEOS[currentVideoIndex]} // Key forces re-render when video changes
                                     autoPlay
-                                    loop
                                     muted
                                     playsInline
+                                    onEnded={handleVideoEnded}
                                     className="w-full h-[400px] md:h-[540px] object-cover"
                                 >
                                     <source
-                                        src="https://res.cloudinary.com/dphbnwjtx/video/upload/v1763772492/890f6199-2808-44d6-ad4c-6261814d6963_w9eoak.mp4"
+                                        src={VIDEOS[currentVideoIndex]}
                                         type="video/mp4"
                                     />
                                 </video>
