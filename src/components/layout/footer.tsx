@@ -72,9 +72,20 @@ export function Footer() {
                             <li><Link href="/agb" className="hover:text-burnt-terra-cotta transition-colors">AGB</Link></li>
                         </ul>
                         <div className="mt-8">
-                            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10">
-                                <span className="w-2 h-2 rounded-full bg-red-600"></span>
-                                <span className="text-xs font-medium text-white">RAB 504748</span>
+                            <div className="inline-flex items-center gap-3">
+                                <div className="relative w-10 h-10 bg-white rounded-lg p-1">
+                                    <Image
+                                        src="https://media.licdn.com/dms/image/v2/D4E0BAQFNVN6NwY2qlg/company-logo_200_200/company-logo_200_200/0/1724913667395/rab_asr_logo?e=2147483647&v=beta&t=P_bbrf5kSzUMz2hcy2u1YwfmIbKwwGtaFAROBcI8rRA"
+                                        alt="RAB ASR Logo"
+                                        width={40}
+                                        height={40}
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <div>
+                                    <p className="text-[10px] text-gray-400 uppercase tracking-wider leading-tight">Zugelassener Revisionsexperte</p>
+                                    <p className="text-sm font-medium text-white">RAB 504748</p>
+                                </div>
                             </div>
                         </div>
                     </div>

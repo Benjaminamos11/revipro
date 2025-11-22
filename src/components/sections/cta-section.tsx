@@ -1,8 +1,9 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { ArrowRight, CheckCircle2, Phone } from "lucide-react"
+import { ArrowRight, Phone } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 import { AppointmentModal } from "@/components/ui/appointment-modal"
 import { useState } from "react"
 
@@ -17,6 +18,7 @@ export function CTASection() {
                         {/* Part 1: Direct Call-to-Action */}
                         <div className="space-y-8">
                             <div className="space-y-4">
+                                <p className="text-burnt-terra-cotta font-semibold tracking-wide uppercase text-sm">Bereit für den nächsten Schritt?</p>
                                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-gray-900">
                                     Klarheit und Sicherheit für Ihre Finanzen.
                                 </h2>
@@ -55,18 +57,23 @@ export function CTASection() {
 
                                 <div className="relative z-10 space-y-8">
                                     {/* RAB Badge - Prominent Version */}
-                                    <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-gray-50 border border-gray-100 shadow-sm">
-                                        <div className="w-8 h-8 rounded-full bg-burnt-terra-cotta flex items-center justify-center">
-                                            <CheckCircle2 className="w-5 h-5 text-white" />
+                                    <div className="inline-flex items-center gap-4 px-5 py-3 rounded-2xl bg-gray-50 border border-gray-100 shadow-sm">
+                                        <div className="relative w-12 h-12 flex-shrink-0">
+                                            <Image
+                                                src="https://media.licdn.com/dms/image/v2/D4E0BAQFNVN6NwY2qlg/company-logo_200_200/company-logo_200_200/0/1724913667395/rab_asr_logo?e=2147483647&v=beta&t=P_bbrf5kSzUMz2hcy2u1YwfmIbKwwGtaFAROBcI8rRA"
+                                                alt="RAB ASR Logo"
+                                                fill
+                                                className="object-contain"
+                                            />
                                         </div>
                                         <div>
-                                            <p className="text-xs text-gray-500 font-medium uppercase tracking-wider">Zertifiziert</p>
+                                            <p className="text-xs text-gray-500 font-medium uppercase tracking-wider">Zugelassener Revisionsexperte</p>
                                             <p className="text-sm font-bold text-gray-900">RAB 504748</p>
                                         </div>
                                     </div>
 
                                     <blockquote className="space-y-4">
-                                        <p className="text-xl md:text-2xl font-medium text-gray-900 leading-relaxed italic">
+                                        <p className="text-lg md:text-xl font-medium text-gray-900 leading-relaxed italic">
                                             "Dank der professionellen und unkomplizierten Arbeitsweise von Revipro fühlen wir uns bestens aufgehoben. Ihre Expertise hat uns geholfen, unsere Prozesse zu optimieren und finanzielle Klarheit zu gewinnen. Absolut empfehlenswert!"
                                         </p>
                                         <footer className="flex items-center gap-4 pt-2">
