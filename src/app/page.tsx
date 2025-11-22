@@ -2,6 +2,7 @@ import { Hero } from "@/components/sections/hero";
 import { BentoGrid } from "@/components/sections/bento-grid";
 import { Team } from "@/components/sections/team";
 import { Services } from "@/components/sections/services";
+import { CTASection } from "@/components/sections/cta-section";
 import { generatePageMetadata, generateOrganizationSchema, generateLocalBusinessSchema } from "@/lib/seo";
 import { Metadata } from "next";
 
@@ -30,6 +31,7 @@ export default function Home() {
       <BentoGrid />
       <Team />
       <Services />
+      <CTASection />
     </>
   );
 }
