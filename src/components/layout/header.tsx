@@ -30,7 +30,10 @@ export function Header() {
                 </nav>
 
                 <div className="flex items-center gap-4">
-                    <Button>Beratungstermin buchen</Button>
+                    <Button className="text-sm md:text-base px-3 md:px-4 whitespace-nowrap">
+                        <span className="hidden sm:inline">Beratungstermin buchen</span>
+                        <span className="sm:hidden">Termin</span>
+                    </Button>
                 </div>
             </div>
         </header>
