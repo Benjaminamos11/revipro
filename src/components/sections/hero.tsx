@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 import { ArrowRight } from "lucide-react"
@@ -36,11 +37,13 @@ export function Hero() {
                                 <span className="hidden sm:inline">Beratungstermin buchen</span>
                                 <span className="sm:hidden">Termin buchen</span>
                             </Button>
-                            <Button variant="outline" size="lg" className="rounded-full text-sm md:text-base group w-full sm:w-auto">
-                                <span className="hidden sm:inline">Unsere Dienstleistungen</span>
-                                <span className="sm:hidden">Dienstleistungen</span>
-                                <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
-                            </Button>
+                            <Link href="/angebot">
+                                <Button variant="outline" size="lg" className="rounded-full text-sm md:text-base group w-full sm:w-auto">
+                                    <span className="hidden sm:inline">Unsere Dienstleistungen</span>
+                                    <span className="sm:hidden">Dienstleistungen</span>
+                                    <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+                                </Button>
+                            </Link>
                         </div>
                     </motion.div>
 
