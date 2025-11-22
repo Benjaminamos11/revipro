@@ -12,11 +12,11 @@ export function Footer() {
                         <div className="mb-6">
                             <Link href="/" className="inline-block">
                                 <Image
-                                    src="/revipro_logo_transparent.png"
+                                    src="https://res.cloudinary.com/dphbnwjtx/image/upload/v1763770550/Generated_Image_November_22_2025_-_8_15AM_zsswsk.jpg"
                                     alt="Revipro Logo"
-                                    width={180}
-                                    height={48}
-                                    className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
+                                    width={200}
+                                    height={60}
+                                    className="h-14 w-auto grayscale opacity-70 hover:opacity-90 transition-opacity"
                                 />
                             </Link>
                         </div>
