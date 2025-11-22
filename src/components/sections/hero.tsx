@@ -67,7 +67,7 @@ export function Hero() {
                                     className="w-full h-[400px] md:h-[540px] object-cover"
                                 >
                                     <source
-                                        src="https://res.cloudinary.com/dphbnwjtx/video/upload/v1763770550/Generated_Video_November_22_2025_-_8_15AM_pnqkfq.mp4"
+                                        src="https://res.cloudinary.com/dphbnwjtx/video/upload/v1763772492/890f6199-2808-44d6-ad4c-6261814d6963_w9eoak.mp4"
                                         type="video/mp4"
                                     />
                                 </video>
