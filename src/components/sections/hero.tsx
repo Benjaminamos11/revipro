@@ -8,7 +8,7 @@ export function Hero() {
     return (
         <section className="relative pt-24 pb-16 md:pt-32 md:pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
             <div className="container mx-auto px-4 md:px-6">
-                <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 xl:gap-20 items-center">
 
                     {/* Left Content */}
                     <motion.div
@@ -23,11 +23,8 @@ export function Hero() {
                             <span className="sm:hidden">RAB Experten</span>
                         </div>
 
-                        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight text-foreground mb-4 md:mb-6 leading-[1.1]">
-                            Wirtschaftsprüfung & <br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-burnt-terra-cotta to-soft-apricot">
-                                Beratung.
-                            </span>
+                        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-foreground mb-4 md:mb-6 leading-[1.1] max-w-xl">
+                            Wirtschaftsprüfung & Beratung.
                         </h1>
 
                         <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 mb-6 md:mb-8 leading-relaxed max-w-lg">
