@@ -57,12 +57,7 @@ export function Hero() {
                         </motion.div>
 
                         {/* Right: Video Background */}
-                        <motion.div
-                            initial={{ opacity: 0, scale: 0.95 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
-                            className="relative"
-                        >
+                        <div className="relative">
                             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                                 <video
                                     autoPlay
